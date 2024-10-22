@@ -1,0 +1,10 @@
+(import stanza)
+
+(stanza/download "en")
+
+(def nlp (stanza/Pipeline "en"))
+
+(def doc
+  (nlp "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"))
+
+doc
